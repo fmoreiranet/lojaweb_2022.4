@@ -114,3 +114,12 @@ body {
     /* RGB: 00-> red, 00-> Green, 00->Blue. Simplificar: 0->R, 0->G, 0->B */
     /* #222222 = #222 */
 }
+
+.img-invert {
+    -webkit-filter: invert();
+    filter: invert();
+}
+
+.icon {
+    width: 15px;
+}
