@@ -1,110 +1,4 @@
-/* cores */
-.orange {
-    color: #f84b2f;
-}
 
-.orange-dark {
-    color: #ec2216;
-}
-
-.white {
-    color: #eee;
-}
-
-.dark {
-    color: #222;
-}
-
-.bg-orange {
-    background-color: #f84b2f;
-}
-
-.bg-orange-dark {
-    background-color: #ec2216;
-}
-
-.bg-white {
-    background-color: #eee;
-}
-
-.bg-dark {
-    background-color: #222;
-}
-
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Grid: 12 colunas */
-.col-1 {
-    width: 8.333%;
-}
-
-.col-2 {
-    width: 16.666%;
-}
-
-.col-3 {
-    width: 24.999%;
-}
-
-.col-4 {
-    width: calc(8.333% * 4);
-    /* 33.332% */
-}
-
-.col-5 {
-    width: 41.665%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.331%;
-}
-
-.col-8 {
-    width: calc(8.333% * 8);
-    /*66.664%*/
-}
-
-.col-9 {
-    width: calc(8.333% * 9);
-    /*74.997%;*/
-}
-
-.col-10 {
-    width: calc(8.333% * 10);
-    /*83.33%;*/
-}
-
-.col-11 {
-    width: calc(8.333% * 11);
-    /*91.663%;*/
-}
-
-.col-12 {
-    width: calc(8.333% * 12);
-    /*100%*/
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 10px;
-    /* border: 1px solid red; */
-}
-
-/* clearfix: Corrigir a flutuação do float */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 /* --------------------  */
 body {
@@ -121,5 +15,25 @@ body {
 }
 
 .icon {
-    width: 15px;
+    width: 10px;
+    position: relative;
+    top: 2px;
 }
+nav .area-usuario a,
+nav .rede-social{
+    font-size: 13px;
+    /* display: flex; */
+}
+
+
+nav .rede-social span{
+    /* position: relative;
+    top: -1px; */
+}
+
+nav .area-usuario a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
