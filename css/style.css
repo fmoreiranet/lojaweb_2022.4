@@ -1,9 +1,13 @@
 body {
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;;
     color: #222;
     /* RGB: 00-> red, 00-> Green, 00->Blue. Simplificar: 0->R, 0->G, 0->B */
     /* #222222 = #222 */
+}
+
+header{
+    height: 119px;
 }
 
 .img-invert {
@@ -34,3 +38,46 @@ nav .area-usuario a{
     color: #fff;
 }
 
+nav .logo{
+    width: 172px;
+    position: relative;
+    top: -42px;
+    left: 136px;
+}
+
+nav .barra-de-pesquisa input{
+    width: 54vw;
+    border-radius: 4px;
+    border: 1px  solid #f84b2f;;
+    font-size: 14px;
+    position: relative;
+    top: -16px;
+    left: -54px;
+}
+
+nav .barra-de-pesquisa button{
+    position: relative;
+    top: -54px;
+    left: 274px;
+    width: 80px;
+    height: 38px;;
+}
+
+nav .barra-de-pesquisa button img{
+    width: 36px;
+}
+
+nav .logo-carrinho{
+    width: 26px;
+    height: 26px;
+    position: relative;
+    right: 64px;
+}
+
+nav .links a{
+    position: relative;
+    top: -16px;
+    left: -54px;
+    padding-right: 8px;
+    font-size: 12px;
+}
