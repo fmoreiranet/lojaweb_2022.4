@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Web - 2022.4</title>
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Locais -->
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/colors.css">
@@ -17,7 +21,7 @@
     <nav>
         <div class="col-12">
             <div class="col-6 rede-social p-0 text-start">
-                Siga-nos <img src="img/instagram.svg" class="img-invert icon" alt="Clique para acessar rede social do Instagram">
+                Siga-nos no <a href=""><i class='fab fa-instagram' style='font-size:12px;color:white'></i></a>
             </div>
 
             <div class="col-6 area-usuario p-0 text-end">
@@ -28,15 +32,26 @@
 
         <div class="col-12">
             <div class="col-3">
-                <img class="logo" src="img/logo-shopee.png" alt="">
+                <div class="logo-shopee">
+                    <img class="p-1" src="img/logo-shopee.png" alt="">
+                </div>
             </div>
 
-            <div class="col-7">
-                <div class="barra-de-pesquisa">
-                    <input class="p-1" type="text" title="Local para pesquisa de produtos" placeholder="Buscar na Shopee">
+            <div class="col-7 p-0">
+                <div class="row bg-white barra-de-pesquisa">
+                    <div class="col-8 p-0">
+                        <input class="barra-de-pesquisa-search bg-white" type="text" title="Local para pesquisa de produtos" placeholder="Buscar na Shopee" maxlength="75">
+                    </div>
+
+                    
+                    <div class="col-4 text-end p-0">
+                        <button class="barra-de-pesquisa-bttn bg-orange white">
+                        <i class="fa fa-search"></i>
+                        </button>
+                    </div>
                 </div>
                 
-                <div class="links">
+                <div class="barra-de-pesquisa-links">
                     <a class="white" href="#">Camisa do Brasil</a>
                     <a class="white" href="#">Vestido</a>
                     <a class="white" href="#">Tenis Masculino</a>

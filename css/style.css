@@ -38,34 +38,46 @@ nav .area-usuario a{
     color: #fff;
 }
 
-nav .logo{
+.logo-shopee{
+
+}
+
+.logo-shopee img{
     width: 172px;
     position: relative;
-    top: -42px;
-    left: 136px;
+    top: -40px;
 }
 
-nav .barra-de-pesquisa input{
-    width: 54vw;
-    border-radius: 4px;
-    border: 1px  solid #f84b2f;;
-    font-size: 14px;
-    position: relative;
-    top: -16px;
-    left: -54px;
+/* Barra de pesquisa */
+.barra-de-pesquisa{
+    padding: 2px;
 }
 
-nav .logo-carrinho{
-    width: 26px;
-    height: 26px;
-    position: relative;
-    right: 64px;
+.barra-de-pesquisa-search,
+.barra-de-pesquisa-bttn{
+    border: none;
 }
 
-nav .links a{
-    position: relative;
-    top: -16px;
-    left: -54px;
-    padding-right: 8px;
-    font-size: 12px;
+.barra-de-pesquisa-search{
+    padding: 8px 20px;
+    width: 100%;
+}
+
+.barra-de-pesquisa-search:focus{
+    outline: none;
+}
+
+.barra-de-pesquisa-bttn{
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.barra-de-pesquisa-links{
+    padding: 5px 0px;
+}
+
+.barra-de-pesquisa-links a{
+    color: #eee;
+    font-size: 10px;
+    padding-right: 4px;
 }
