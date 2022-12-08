@@ -19,7 +19,7 @@
 
 <body>
     <header class="row bg-orange white" class="redesocial">
-        <nav>
+        <nav class="container">
             <div class="col-12">
                 <div class="col-8 rede-social p-0">
                     siga-nos
@@ -33,10 +33,20 @@
                 </div>
             </div>
             <div class="col-12 p-0">
-                <div class="col-3">
-                    logo
+                <div class="col-2 col-mobile p-0 text-start">
+                    <div class="display-mobile-hide">
+                        <img src="./img/logo2.svg" alt="Logo marca da loja" class="icon-logo">
+                    </div>
+
+                    <div class="col-6 text-start display-mobile-show">
+                        <img src="./img/logo2.svg" alt="Logo marca da loja" class="icon-logo">
+                    </div>
+
+                    <div class="col-6 text-end display-mobile-show">
+                        <i class="fas fa-shopping-cart icon-cart display-mobile-show"></i>
+                    </div>
                 </div>
-                <div class="col-7 p-0">
+                <div class="col-8 col-mobile p-0">
                     <div class="row bg-white bar-search">
                         <div class="col-9 p-0">
                             <input type="text" title="Local para pesquisa de produtos" class="input-search bg-white"
@@ -44,7 +54,7 @@
                         </div>
                         <div class="col-3 p-0 text-end">
                             <button class="btn-search bg-orange white">
-                                <i class="fas fa-search"></i>
+                                <i class="fa fa-search"></i>
                             </button>
                         </div>
                     </div>
@@ -55,8 +65,8 @@
                         <a href="#">links</a>
                     </div>
                 </div>
-                <div class="col-2">
-                    carrinho
+                <div class="col-2 p-0 text-center">
+                    <i class="fas fa-shopping-cart icon-cart  display-mobile-hide"></i>
                 </div>
             </div>
         </nav>
