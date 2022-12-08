@@ -19,11 +19,45 @@ body {
 
 nav .area-usuario a,
 nav .rede-social {
-    font-size: 10px;
+    font-size: 12px;
     /* display: flex; */
 }
 
 nav .area-usuario a {
     text-decoration: none;
     color: #eee;
+}
+
+/* Barra de busca */
+.bar-search {
+    padding: 2px;
+}
+
+.input-search,
+.btn-search {
+    border: none;
+}
+
+.input-search {
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.input-search:focus {
+    outline: none !important;
+}
+
+.btn-search {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.links-search {
+    padding: 5px 0;
+}
+
+.links-search a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 10px;
 }
