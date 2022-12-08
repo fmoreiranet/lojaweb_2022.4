@@ -139,3 +139,20 @@
 .text-end{
    text-align: end;
 }
+
+.container{
+   width: 100%;
+   min-width: 360px;
+   max-width: 1280px; 
+   margin: auto;
+}
+/* max-width é 1280px e não maior por conta da borda do navegador. a barra de rolagem nunca pode aparecer na horizontal, apenas na vertical.*/
+
+@media screen and (max-width: 480px) {
+   /* [class*="col-"] {
+     width: 100%;
+   } */
+   .col-mobile{
+      width: 100%;
+   }
+}

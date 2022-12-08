@@ -39,7 +39,7 @@ nav .area-usuario a{
 }
 
 .logo-shopee img{
-    width: 172px;
+    width: 100%;
     position: relative;
     top: -40px;
 }
@@ -76,4 +76,10 @@ nav .area-usuario a{
     color: #eee;
     font-size: 10px;
     padding-right: 4px;
+}
+
+@media screen and (max-width: 960px) {
+    .logo-shopee{
+        display: none;
+    }
 }
