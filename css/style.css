@@ -39,6 +39,9 @@ nav .area-usuario a {
     color: #eee;
 }
 
+nav a:hover{
+    color:hsla(0,0%,100%,.7);
+}
 /* Barra de busca */
 .search-area{
     display: flex;
@@ -51,6 +54,7 @@ nav .area-usuario a {
 .bar-search {
     padding: 2px;
     width: 100%;
+    border-radius: 2px;
 }
 
 
@@ -65,16 +69,15 @@ nav .area-usuario a {
 }
 
 .input-search {
-    padding: 5px 10px;
+    padding: 8px 10px;
 }
-
 
 .input-search:focus {
     outline: none !important;
 }
 
 .btn-search {
-    padding: 5px 20px;
+    padding: 12px 20px;
     cursor: pointer;
 }
 
@@ -121,5 +124,4 @@ nav .area-usuario a {
         display: none;
     }
 }
-
 
