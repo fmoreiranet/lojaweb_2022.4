@@ -1,13 +1,20 @@
 body {
     font-size: 14px;
-    font-family: Roboto,Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;;
+    font-family: sans-serif;
     color: #222;
     /* RGB: 00-> red, 00-> Green, 00->Blue. Simplificar: 0->R, 0->G, 0->B */
     /* #222222 = #222 */
 }
 
-header{
-    height: 119px;
+.container{
+    width: 100%;
+    min-width: 360px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.cabecalho-superior{
+    justify-content: space-between;
 }
 
 .img-invert {
@@ -18,54 +25,101 @@ header{
 .icon {
     width: 10px;
     position: relative;
-    top: 2px;
+    top: 3px;
 }
+
 nav .area-usuario a,
-nav .rede-social{
-    font-size: 13px;
+nav .rede-social {
+    font-size: 12px;
     /* display: flex; */
 }
 
-
-/* nav .rede-social span{
-    position: relative;
-    top: -1px;
-} */
-
-nav .area-usuario a{
-    font-weight: 700;
+nav .area-usuario a {
     text-decoration: none;
-    color: #fff;
+    color: #eee;
 }
 
-nav .logo{
-    width: 172px;
-    position: relative;
-    top: -42px;
-    left: 136px;
+/* Barra de busca */
+.search-area{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
 }
 
-nav .barra-de-pesquisa input{
-    width: 54vw;
-    border-radius: 4px;
-    border: 1px  solid #f84b2f;;
-    font-size: 14px;
-    position: relative;
-    top: -16px;
-    left: -54px;
+.bar-search {
+    padding: 2px;
+    width: 100%;
 }
 
-nav .logo-carrinho{
-    width: 26px;
-    height: 26px;
-    position: relative;
-    right: 64px;
+
+.search-area-input-links{
+    width: 60%;
 }
 
-nav .links a{
-    position: relative;
-    top: -16px;
-    left: -54px;
-    padding-right: 8px;
-    font-size: 12px;
+
+.input-search,
+.btn-search {
+    border: none;
 }
+
+.input-search {
+    padding: 5px 10px;
+}
+
+
+.input-search:focus {
+    outline: none !important;
+}
+
+.btn-search {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.links-search {
+    padding: 5px 0;
+}
+
+.links-search a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.icon-logo {
+    padding: 0 10px;
+    width: 100%;
+    max-height: 50px;
+}
+
+.icon-cart {
+    padding-top: 0px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 560px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .logo-cart {
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .search-area {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .note-hide {
+        display: none;
+    }
+}
+
+

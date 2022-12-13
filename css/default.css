@@ -1,10 +1,8 @@
-
 /* Reset CSS */
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   text-decoration: none;
 }
 
 /* Grid: 12 colunas */
@@ -75,67 +73,81 @@
    display: table;
 }
 
-/* Espaçamento interno definido */
-
-.p-0{
+/* Espaçamento interno pré definido */
+.p-0 {
    padding: 0;
 }
 
-.p-1{
+.p-1 {
    padding: 10px;
 }
 
-.p-2{
+.p-2 {
    padding: 20px;
 }
 
-.p-3{
+.p-3 {
    padding: 40px;
 }
 
-.p-4{
+.p-4 {
    padding: 80px;
 }
 
-.p-5{
+.p-5 {
    padding: 160px;
 }
 
-
-/* Espaçamento externo definido */
-
-.m-0{
+/* Espaçamento externo pré definido */
+.m-0 {
    margin: 0;
 }
 
-.m-1{
-   margin: 10mx;
+.m-1 {
+   margin: 10px;
 }
 
-.m-2{
-   margin: 20mx;
+.m-2 {
+   margin: 20px;
 }
 
-.m-3{
-   margin: 40mx;
+.m-3 {
+   margin: 40px;
 }
 
-.m-4{
-   margin: 80mx;
+.m-4 {
+   margin: 80px;
 }
 
-.m-5{
-   margin: 160mx;
+.m-5 {
+   margin: 160px;
 }
 
-.text-start{
+.text-start {
    text-align: start;
 }
 
-.text-center{
+.text-end {
+   text-align: end;
+}
+
+.text-start {
+   text-align: start;
+}
+
+.text-center {
    text-align: center;
 }
 
-.text-end{
-   text-align: end;
+.container {
+   width: 100%;
+   min-width: 360px;
+   max-width: 1280px;
+   /*1.366 largura da tela dos notebooks*/
+   margin: auto;
+}
+
+.display-flex{
+   display: flex;
+   width: 100%;
 }
