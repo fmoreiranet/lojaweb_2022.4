@@ -178,6 +178,7 @@
 .flex-column{
     flex-direction: column;
 }
+
 @media screen and (max-width:580px) {
     /* [class*="col-"] {
         width: 100%;
@@ -199,3 +200,4 @@
     .display-mobile-hide {
         display: none;
     }
+}
