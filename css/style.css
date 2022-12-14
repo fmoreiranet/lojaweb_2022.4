@@ -6,8 +6,8 @@ body {
     /* #222222 = #222 */
 }
 
-header{
-    height: 119px;
+#header-top{
+    padding: 8px;
 }
 
 .img-invert {
@@ -18,62 +18,83 @@ header{
 .icon {
     width: 10px;
     position: relative;
-    top: 2px;
+    top: 3px
 }
+
 nav .area-usuario a,
-nav .rede-social{
-    font-size: 13px;
+nav .rede-social {
+    font-size: 12px;
     /* display: flex; */
 }
 
-
-/* nav .rede-social span{
-    position: relative;
-    top: -1px;
-} */
-
-nav .area-usuario a{
-    font-weight: 700;
+nav .area-usuario a {
     text-decoration: none;
-    color: #fff;
+    color: #eee;
 }
 
-.logo-shopee img{
-    width: 172px;
-    position: relative;
-    top: -40px;
-}
-
-/* Barra de pesquisa */
-.barra-de-pesquisa{
+/* Barra de busca */
+.bar-search {
     padding: 2px;
 }
 
-.barra-de-pesquisa-search,
-.barra-de-pesquisa-bttn{
+.input-search,
+.btn-search {
     border: none;
 }
 
-.barra-de-pesquisa-search{
-    padding: 8px 20px;
+.input-search {
+    padding: 5px 10px;
     width: 100%;
 }
 
-.barra-de-pesquisa-search:focus{
-    outline: none;
+.input-search:focus {
+    outline: none !important;
 }
 
-.barra-de-pesquisa-bttn{
-    padding: 8px 20px;
+.btn-search {
+    padding: 5px 20px;
     cursor: pointer;
 }
 
-.barra-de-pesquisa-links{
-    padding: 5px 0px;
+.links-search {
+    padding: 5px 0;
 }
 
-.barra-de-pesquisa-links a{
+.links-search a {
     color: #eee;
+    text-decoration: none;
     font-size: 10px;
-    padding-right: 4px;
+}
+
+.icon-logo {
+    padding: 0 15px;
+    width: 100%;
+    max-height: 50px;
+}
+
+.icon-cart {
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.header-search{
+    flex-basis: 70%;
+}
+
+.slides{
+    height: 100%;
+    min-height: 300px;
+    background-color: aqua;
+    flex-grow: 6;
+}
+
+.ofertas{
+    flex-grow: 3;
+}
+
+.ofertas div{
+    height: 100%;
+    min-height: 150px;
+    background-color: red; 
+    margin-left: 10px;
 }
