@@ -69,14 +69,34 @@ nav .area-usuario a {
 }
 
 .icon-cart {
-    padding-top: 10px;
+    padding: 10px 20px;
     font-size: 25px;
+}
+
+.header-space-y {
+    padding: 0 0 10px 0;
+}
+
+/* Exemplo Flex */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-seach {
+    flex-basis: 70%;
+}
+
+.bar-search {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width:960px) {
     /* .icon-cart {
         display: none;
     } */
+
 }
 
 @media print {
@@ -84,5 +104,3 @@ nav .area-usuario a {
         display: none;
     }
 }
-
-/* Flex aqui*/
