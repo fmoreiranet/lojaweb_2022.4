@@ -1,13 +1,20 @@
 body {
     font-size: 14px;
-    font-family: Roboto,Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;;
+    font-family: sans-serif;
     color: #222;
     /* RGB: 00-> red, 00-> Green, 00->Blue. Simplificar: 0->R, 0->G, 0->B */
     /* #222222 = #222 */
 }
 
-#header-top{
-    padding: 8px;
+.container{
+    width: 100%;
+    min-width: 360px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.cabecalho-superior{
+    justify-content: space-between;
 }
 
 .img-invert {
@@ -18,7 +25,7 @@ body {
 .icon {
     width: 10px;
     position: relative;
-    top: 3px
+    top: 3px;
 }
 
 nav .area-usuario a,
@@ -33,9 +40,24 @@ nav .area-usuario a {
 }
 
 /* Barra de busca */
+.search-area{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
+
 .bar-search {
     padding: 2px;
+    width: 100%;
 }
+
+
+.search-area-input-links{
+    width: 60%;
+}
+
 
 .input-search,
 .btn-search {
@@ -44,8 +66,8 @@ nav .area-usuario a {
 
 .input-search {
     padding: 5px 10px;
-    width: 100%;
 }
+
 
 .input-search:focus {
     outline: none !important;
@@ -67,18 +89,31 @@ nav .area-usuario a {
 }
 
 .icon-logo {
-    padding: 0 15px;
+    padding: 0 10px;
     width: 100%;
     max-height: 50px;
 }
 
 .icon-cart {
-    padding-top: 10px;
+    padding-top: 0px;
     font-size: 25px;
 }
 
-.header-search{
-    flex-basis: 70%;
+@media screen and (max-width: 560px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .logo-cart {
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .search-area {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #first-section{
