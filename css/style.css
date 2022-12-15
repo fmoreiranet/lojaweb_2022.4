@@ -111,10 +111,26 @@ nav .area-usuario a {
     padding: 5px;
 }
 
-@media (max-width:960px) {
+#publicidade-desktop1 {
+    display: block;
+}
+
+#publicidade-mobile1 {
+    display: none;
+}
+
+@media (max-width:460px) {
     /* .icon-cart {
         display: none;
     } */
+
+    #publicidade-desktop1 {
+        display: none;
+    }
+
+    #publicidade-mobile1 {
+        display: block;
+    }
 
 }
 
