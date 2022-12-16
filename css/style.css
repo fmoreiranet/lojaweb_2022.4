@@ -94,7 +94,6 @@ nav .area-usuario a {
 
 .slides {
     height: 100%;
-    min-height: 250px;
     background-color: #ef0;
     flex-grow: 3;
     padding: 5px;
@@ -106,9 +105,16 @@ nav .area-usuario a {
 
 .ofertas div {
     height: 100%;
-    min-height: 120px;
     background-color: rgb(144, 139, 191);
     padding: 5px;
+}
+
+.display-mobile-hide {
+    display: block;
+}
+
+.display-mobile-show {
+    display: none;
 }
 
 #publicidade-desktop1 {
@@ -118,6 +124,7 @@ nav .area-usuario a {
 #publicidade-mobile1 {
     display: none;
 }
+
 
 @media (max-width:460px) {
     /* .icon-cart {
@@ -129,6 +136,14 @@ nav .area-usuario a {
     }
 
     #publicidade-mobile1 {
+        display: block;
+    }
+
+    .display-mobile-hide {
+        display: none;
+    }
+
+    .display-mobile-show {
         display: block;
     }
 
