@@ -99,6 +99,14 @@ nav .area-usuario a {
     padding: 5px;
 }
 
+.carousel-item {
+    height: 240px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
 .ofertas {
     flex-grow: 1;
 }
@@ -125,11 +133,35 @@ nav .area-usuario a {
     display: none;
 }
 
-
 @media (max-width:460px) {
     /* .icon-cart {
         display: none;
     } */
+    .col-mobile {
+        width: 100%;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .flex-mobile-row {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .justify-content-m-between {
+        justify-content: space-between;
+    }
+
+    .display-mobile-hide {
+        display: none;
+    }
+
+    .display-mobile-show {
+        display: block;
+        padding: 10px;
+    }
 
     #publicidade-desktop1 {
         display: none;
