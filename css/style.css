@@ -61,3 +61,103 @@ nav .area-usuario a {
     text-decoration: none;
     font-size: 10px;
 }
+
+.icon-logo {
+    padding: 0 10px;
+    width: 100%;
+    max-height: 50px;
+}
+
+.icon-cart {
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+.header-space-y {
+    padding: 0 0 10px 0;
+}
+
+/* Exemplo Flex */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-seach {
+    flex-basis: 70%;
+}
+
+.bar-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slides {
+    background-color: #ef0;
+    flex-grow: 3;
+    padding: 5px;
+}
+
+.ofertas {
+    flex-grow: 1;
+}
+
+.carousel-item {
+    height: 250px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.ofertas div {
+    height: 100%;
+    background-color: rgb(144, 139, 191);
+    padding: 5px;
+}
+
+.display-mobile-hide {
+    display: block;
+}
+
+.display-mobile-show {
+    display: none;
+}
+
+#publicidade-desktop1 {
+    display: block;
+}
+
+#publicidade-mobile1 {
+    display: none;
+}
+
+
+@media (max-width:460px) {
+    /* .icon-cart {
+        display: none;
+    } */
+
+    #publicidade-desktop1 {
+        display: none;
+    }
+
+    #publicidade-mobile1 {
+        display: block;
+    }
+
+    .display-mobile-hide {
+        display: none;
+    }
+
+    .display-mobile-show {
+        display: block;
+    }
+
+}
+
+@media print {
+    img {
+        display: none;
+    }
+}
