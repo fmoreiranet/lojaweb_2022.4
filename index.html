@@ -22,60 +22,6 @@
 </head>
 
 <body>
-    <!-- <header class="row bg-orange white" class="redesocial">
-        <nav class="container">
-            <div class="col-12">
-                <div class="col-8 rede-social p-0">
-                    siga-nos
-                    <img src="./img/instagram.svg" class="img-invert icon"
-                        alt="Clique para acessar rede social do Instagram">
-                    <img src="./img/instagram.svg" class="img-invert icon"
-                        alt="Clique para acessar rede social do Instagram">
-                </div>
-                <div class="col-4 area-usuario p-0 text-end">
-                    <a href="">Cadastrar</a> | <a href="">Entrar</a>
-                </div>
-            </div>
-            <div class="col-12 p-0">
-                <div class="col-2 col-mobile p-0 text-start">
-                    <div class="display-mobile-hide">
-                        <img src="./img/logo2.svg" alt="Logo marca da loja" class="icon-logo">
-                    </div>
-
-                    <div class="col-6 text-start display-mobile-show">
-                        <img src="./img/logo2.svg" alt="Logo marca da loja" class="icon-logo">
-                    </div>
-
-                    <div class="col-6 text-end display-mobile-show">
-                        <i class="fas fa-shopping-cart icon-cart display-mobile-show"></i>
-                    </div>
-                </div>
-                <div class="col-8 col-mobile p-0">
-                    <div class="row bg-white bar-search">
-                        <div class="col-9 p-0">
-                            <input type="text" title="Local para pesquisa de produtos" class="input-search bg-white"
-                                maxlength="50">
-                        </div>
-                        <div class="col-3 p-0 text-end">
-                            <button class="btn-search bg-orange white">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="links-search">
-                        <a href="#">links</a>
-                        <a href="#">links</a>
-                        <a href="#">links</a>
-                        <a href="#">links</a>
-                    </div>
-                </div>
-                <div class="col-2 p-0 text-center">
-                    <i class="fas fa-shopping-cart icon-cart  display-mobile-hide"></i>
-                </div>
-            </div>
-        </nav>
-    </header> -->
-
     <header class="bg-orange white" class="redesocial">
         <nav class="container">
             <div class="d-flex flex-mobile-row justify-content-between header-space-y">
@@ -133,7 +79,37 @@
     <section>
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <div class="slides">
-                colocar o slides...
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/400/300" height="500" width="1200" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/400/300" height="500" width="1200" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/400/300" height="500" width="1200" class="" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
             <div class="ofertas d-flex flex-column">
                 <div>
@@ -159,7 +135,6 @@
         </div>
     </section>
 </body>
-
 <script src="/libs/js/bootstrap.min.js"></script>
 
 </html>

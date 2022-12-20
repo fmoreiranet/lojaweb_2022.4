@@ -93,7 +93,6 @@ nav .area-usuario a {
 }
 
 .slides {
-    height: 100%;
     background-color: #ef0;
     flex-grow: 3;
     padding: 5px;
@@ -101,6 +100,14 @@ nav .area-usuario a {
 
 .ofertas {
     flex-grow: 1;
+}
+
+.carousel-item {
+    height: 250px;
+}
+
+.carousel-item img {
+    object-fit: cover;
 }
 
 .ofertas div {
