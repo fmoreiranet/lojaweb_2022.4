@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     font-size: 14px;
     font-family: sans-serif;
@@ -132,6 +138,38 @@ nav .area-usuario a {
     display: none;
 }
 
+.py-20 {
+    padding: 20px 0;
+}
+
+.timeOff b{
+    border-radius: 4px;
+    padding: 0 2px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+.produto-img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.produto-flagOff {
+    background-image: url(../img/flag.svg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 70px;
+    right: 0;
+}
+
+.produto-frete {
+    position: absolute;
+    bottom: 0;
+}
 @media (max-width:460px) {
     /* .icon-cart {
         display: none;

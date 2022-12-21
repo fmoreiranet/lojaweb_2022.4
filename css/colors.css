@@ -1,4 +1,7 @@
 /* cores */
+.yellow{
+    color: yellow;
+}
 .orange {
     color: #f84b2f;
 }
@@ -13,6 +16,14 @@
 
 .dark {
     color: #222;
+}
+
+.gray{
+    color: rgba(238, 238, 238, 0.699);
+}
+
+.bg-gray{
+    background-color: rgba(238, 238, 238, 0.699);
 }
 
 .bg-orange {
