@@ -11,6 +11,9 @@ body {
     /* RGB: 00-> red, 00-> Green, 00->Blue. Simplificar: 0->R, 0->G, 0->B */
     /* #222222 = #222 */
 }
+header {
+    margin-bottom: 30px;
+}
 
 .img-invert {
     -webkit-filter: invert();
@@ -99,9 +102,9 @@ nav .area-usuario a {
 
 .slides {
     height: 100%;
-    background-color: #ef0;
     flex-grow: 3;
     padding: 5px;
+    background-color: yellow;
 }
 
 .carousel-item {
@@ -112,6 +115,22 @@ nav .area-usuario a {
     object-fit: cover;
 }
 
+#categorias {
+    margin: 10px;
+}
+.icons-shopee {
+    margin-top: 10px;
+}
+
+.icons-shopee img {
+    width: 45px;
+    height: 45px;
+}
+
+.icons-shopee-names{
+    margin-top: 8px;
+    font-size: 12px;
+}
 .ofertas {
     flex-grow: 1;
 }
@@ -150,7 +169,7 @@ nav .area-usuario a {
     color: white;
 }
 
-.produto-img{
+.produto-img {
     position: relative;
     width: 200px;
     height: 200px;
@@ -162,14 +181,27 @@ nav .area-usuario a {
     background-size: cover;
     background-repeat: no-repeat;
     width: 50px;
-    height: 70px;
+    height: 76px;
     right: 0;
+    color: white;
+    font-weight: 800;
+}
+
+.produto-flagOff span:first-child{
+    color: #f84b2f;
 }
 
 .produto-frete {
     position: absolute;
     bottom: 0;
 }
+
+@media (max-width: 800px) {
+   #categorias{
+    display: none;
+   } 
+}
+
 @media (max-width: 500px) {
     /* .icon-cart {
         display: none;
@@ -216,10 +248,4 @@ nav .area-usuario a {
         display: block;
     }
 
-}
-
-@media print {
-    img {
-        display: none;
-    }
 }
