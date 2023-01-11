@@ -1,7 +1,7 @@
 body {
     font-size: 14px;
     font-family: sans-serif;
-    color: #222;
+    color: var(--black);
     /* RGB: 00-> red, 00-> Green, 00->Blue. Simplificar: 0->R, 0->G, 0->B */
     /* #222222 = #222 */
 }
@@ -25,7 +25,7 @@ nav .rede-social {
 
 nav .area-usuario a {
     text-decoration: none;
-    color: #eee;
+    color: var(--white)
 }
 
 /* Barra de busca */
@@ -57,7 +57,7 @@ nav .area-usuario a {
 }
 
 .links-search a {
-    color: #eee;
+    color: var(--white);
     text-decoration: none;
     font-size: 10px;
 }
@@ -93,7 +93,7 @@ nav .area-usuario a {
 }
 
 .slides {
-    background-color: #ef0;
+    background-color: var(--yellow);
     flex-grow: 3;
     padding: 5px;
 }
@@ -112,7 +112,7 @@ nav .area-usuario a {
 
 .ofertas div {
     height: 100%;
-    background-color: rgb(144, 139, 191);
+    background-color: var(purple);
     padding: 5px;
 }
 
@@ -137,36 +137,77 @@ nav .area-usuario a {
 }
 
 #timeOff b {
-    background-color: #222;
-    color: #eee;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 4px;
     padding: 0 2px;
     font-size: 14px;
 }
 
-.product-flagOff {
-    background-image: url(/img/bookmark-solid.svg);
-    background-size: cover;
-    width: 40px;
-    height: 50px;
-    text-align: center;
-}
-
 .product-img {
+    width: 100%;
     position: relative;
-    width: 100px;
 }
 
 .product-flagOff {
+    background-image: url("../img/bookmark-solid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 40px;
     position: absolute;
+    top: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    padding-top: 3px;
+}
 
+.product-flagOff span:first-child {
+    color: var(--orange)
+}
+
+.product-img img {
+    width: 100%;
 }
 
 .product-post {
     position: absolute;
     bottom: 0;
+    width: 70%;
 }
+
+.product-price,
+.product-bar {
+    text-align: center;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--orange);
+    padding: 10px 0;
+    margin: 0;
+}
+
+.product-bar {
+    position: relative;
+}
+
+.product-bar span {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    color: var(--white);
+    font-weight: bold;
+}
+
+
+
 
 @media (max-width:460px) {
     /* .icon-cart {

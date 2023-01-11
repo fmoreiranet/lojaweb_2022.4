@@ -1,1 +1,13 @@
 /* Variáveis style */
+:root {
+    --orange: #f84b2f;
+    --orange-light: #f1756e;
+    --orange-dark: #ec2216;
+    --white: #eee;
+    --black: #222;
+    --gray: #f5f5f5;
+    --yellow: #ef0;
+    --purple: rgb(144, 139, 191);
+
+    --ff-sans-serif: sans-serif;
+}

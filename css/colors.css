@@ -1,40 +1,49 @@
 /* cores */
 .orange {
-    color: #f84b2f;
+    color: var(--orange);
+}
+
+.orange-light {
+    color: var(--orange-light);
 }
 
 .orange-dark {
-    color: #ec2216;
+    color: var(--orange-dark);
 }
 
 .white {
-    color: #eee;
+    color: var(--white);
 }
 
 .dark {
-    color: #222;
+    color: var(--black);
 }
 
 .gray {
-    color: #f5f5f5;
+    color: var(--gray);
 }
 
+/* Backgrounds */
 .bg-orange {
-    background-color: #f84b2f;
+    background-color: var(--orange);
+}
+
+.bg-orange-light {
+    background-color: var(--orange-light);
 }
 
 .bg-orange-dark {
-    background-color: #ec2216;
+    background-color: var(--orange-dark);
 }
 
 .bg-white {
-    background-color: #eee;
+    background-color: var(--white);
 }
 
 .bg-dark {
-    background-color: #222;
+    background-color: var(--black);
 }
 
 .bg-gray {
-    background-color: #f5f5f5;
+    background-color: var(--gray);
 }
